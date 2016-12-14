@@ -1,0 +1,30 @@
+{
+  "name": "mamajs",
+  "version": "0.0.1",
+  "description": "Mantenimiento del sistema MAMA",
+  "main": "mama.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelBorja/mamajs.git"
+  },
+  "keywords": [
+    "mama",
+    "js",
+    "react.js"
+  ],
+  "author": "Manuel Borja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManuelBorja/mamajs/issues"
+  },
+  "homepage": "https://github.com/ManuelBorja/mamajs#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
