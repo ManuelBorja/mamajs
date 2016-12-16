@@ -4,26 +4,20 @@ import Centro from './Centro';
 
 class Madres extends Component {
   render() {
-    let madresitems;
-    let categoria;
+    let lineas = [];
+    let uCentro = null;
     if(this.props.madres){
-      madresitems = this.props.madres.map(
-        (madre) => {
-          if(categoria!=madre.centro){
-            categoria = <Centro nombre="{madre.centro}" />
-          };
-          return (
-            <div>
-               {categoria}
-               <MadreItem madre={madre} />
-            </div>
-          );
-        }
-      );
-    }
+      this.props.madres.forEach(function(madre){
+        if(uCentro!==madre.centro){
+          lineas.push( <Centro centro={madre.centro} key={madre.centro} />);
+          uCentro=madre.centro;
+        };
+        lineas.push( <MadreItem nombre={madre.nombre} key={madre.dni} />);
+      });
+    };
     return (
       <div>
-          {madresitems}
+          {lineas}
       </div>
     );
   }

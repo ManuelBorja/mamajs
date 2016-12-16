@@ -3,10 +3,10 @@ import Madres from './Componentes/Madres';
 import './App.css';
 
 var MADRES = [
-  {nombre:'Jacinta Quiñones',centro:'Leonardo Ortiz'},
-  {nombre:'Perla  de los Rios',centro:'Leonardo Ortiz'},
-  {nombre:'Paola Bellido',centro:'Chiclayo'},
-  {nombre:'Amanda Puertas',centro:'Chiclayo'}
+  {nombre:'Jacinta Quiñones',centro:'Leonardo Ortiz',dni:'09500001'},
+  {nombre:'Perla  de los Rios',centro:'Leonardo Ortiz',dni:'09500002'},
+  {nombre:'Paola Bellido',centro:'Chiclayo',dni:'09500003'},
+  {nombre:'Amanda Puertas',centro:'Chiclayo',dni:'09500004'}
 ]
 
 class App extends Component {
