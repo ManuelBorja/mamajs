@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/mama.css">
+    <link rel="stylesheet" href="./lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css">
+
   </head>
   <body>
 
@@ -31,7 +32,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="madres.html">Madres</a></li>
+              <li><a href="#">Madres</a></li>
               <li><a href="#">Centros</a></li>
               <li><a href="#">Regiones</a></li>
               <li class="dropdown">
@@ -49,48 +50,75 @@
     </header>
 
     <div class="row">
-      <div class="col-sm-4">
-        <img class="logo center-block" src="img/logox1.png" alt="Programa MAMA">
-      </div>
-
+      <div class="col-sm-3"></div>
       <div class="col-sm-6">
 
         <div>
-           <h3>Ingreso al sistema</h3>
+           <h3>Registro de usuario</h3>
         </div>
 
         <form>
           <div class="form-group">
-            <label for="dni">Usuario</label>
-            <input type="text" class="form-control" id="dni" placeholder="Codigo de usuario">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Apellidos de la Madre">
           </div>
           <div class="form-group">
-            <label for="clave">Clave</label>
-            <input type="password" class="form-control" id="clave" placeholder="Clave de Ingreso">
+            <label for="nombres">Nombres</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Nombres de la Madre">
           </div>
-
-          <button type="submit" class="btn btn-primary">Ingresar</button>
+          <div class="form-group">
+            <label for="celular">Centro de Salud</label>
+            <input type="text" class="form-control" id="celular" placeholder="Teléfono celular de la madre">
+          </div>
+          <div class="form-group">
+            <label for="region">Región</label>
+            <select id="region" class="form-control">
+              <option>--- Seleccionar ---</option>
+              <option>Lambayeque</option>
+              <option>La Libertad</option>
+              <option>Tumbes</option>
+              <option>Piura</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="departamento">Departamento</label>
+            <select id="departamento" class="form-control">
+              <option>--- Seleccionar ---</option>
+              <option>Obstetricia</option>
+              <option>Enfermería</option>
+              <option>Medicina</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="celular">Usuario</label>
+            <input type="text" class="form-control" id="celular" placeholder="Teléfono celular de la madre">
+          </div>
+          <div class="form-group">
+            <label for="celular">Clave</label>
+            <input type="text" class="form-control" id="celular" placeholder="Teléfono celular de la madre">
+          </div>
+          <button type="submit" class="btn btn-danger">Grabar Registro</button>
         </form>
 
       </div>
-
-
+      <div class="col-sm-3"></div>
     </div>
 
-    <footer>
-        <div class="row navbar-fixed-bottom">
-          <div class="col-sm-12">
-            <img class="logofooter center-block" src="img/formato1.jpg" alt="ProGobernabilidad">
-          </div>
-        </div>
-    </footer>
 
+    <div class="row">
+      <div class="col-sm-12">
+          <img class="logofooter center-block" src="img/formato1.jpg" alt="ProGobernabilidad">
+      </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-    <script src="js/mama.js" charset="utf-8"></script>
+    <script src="./lib/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js" charset="utf-8"></script>
+    <script src="./lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.es.min.js" charset="utf-8"></script>
 
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="js/madre.js" charset="utf-8"></script>
 
   </body>
 

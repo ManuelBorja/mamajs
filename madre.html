@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Programa MAMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css">
+
+  </head>
+  <body>
+
+    <header class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/minilogo50.png" alt="Programa MAMA">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Madres</a></li>
+              <li><a href="#">Centros</a></li>
+              <li><a href="#">Regiones</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuel Borja <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Perfil</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+
+        <div>
+           <h3>Registro de datos para el programa MAMA</h3>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="dni">DNI de la madre</label>
+            <input type="text" class="form-control" id="dni" placeholder="Número de DNI de la Madre">
+          </div>
+          <div class="form-group">
+            <label for="nombres">Nombres de la madre</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Nombres de la Madre">
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Apellidos de la madre</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Apellidos de la Madre">
+          </div>
+          <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" class="form-control" id="celular" placeholder="Teléfono celular de la madre">
+          </div>
+          <div class="form-group">
+            <label for="celular">Celular de acompañamiento</label>
+            <input type="text" class="form-control" id="celular" placeholder="Teléfono celular de acompañamiento">
+          </div>
+          <div class="form-group">
+            <label for="fecha_parto">Fecha Probable de Parto de la Gestante</label>
+            <input type="text" class="form-control" id="fecha_parto" placeholder="Fecha Probable de Parto de la Gestante">
+          </div>
+          <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de Nacimiento del Niño</label>
+            <input type="text" class="form-control" id="fecha_nacimiento" placeholder="Fecha de Nacimiento del Niño">
+          </div>
+          <div class="form-group">
+            <label for="dni">DNI del Niño</label>
+            <input type="text" class="form-control" id="dni_nino" placeholder="Número de DNI del Niño">
+          </div>
+
+          <div class="form-group">
+            <label for="hc_familiar">Historia Clinica Familiar</label>
+            <input type="text" class="form-control" id="hc_familiar" placeholder="Historia Cliniica Familiar">
+          </div>
+          <div class="form-group">
+            <label for="hc_madre">Historia Clinica de la Madre</label>
+            <input type="text" class="form-control" id="hc_madre" placeholder="Historia Cliniica de la madre">
+          </div>
+          <div class="form-group">
+            <label for="hc_nino">Historia Clinica del Niño</label>
+            <input type="text" class="form-control" id="hc_nino" placeholder="Historia Cliniica del niño">
+          </div>
+          <button type="submit" class="btn btn-danger">Grabar Registro</button>
+        </form>
+
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12">
+          <img class="logofooter center-block" src="img/formato1.jpg" alt="ProGobernabilidad">
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="./lib/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js" charset="utf-8"></script>
+    <script src="./lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.es.min.js" charset="utf-8"></script>
+
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="js/madre.js" charset="utf-8"></script>
+
+  </body>
+
+</html>
